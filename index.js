@@ -66,13 +66,9 @@ function writeToFile(fileName, data) {
 function init() { 
     inquirer.prompt(questions).then((data) => {
         writeToFile('README.md', data);
-        // console.log(data)
-        // return data
-       // call write to file, write up generate markdown
      
     });
 }
 
 // Function call to initialize app
 init();
-// module.exports = data
