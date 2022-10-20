@@ -29,7 +29,7 @@ const questions = [
             type: 'list',
             message: 'What license will you include with this project?',
             name: 'projectLicense',
-            choices: ['MIT', 'Apache', 'Creative Commons', 'Perl'],
+            choices: ['None', 'MIT', 'Apache'],
         },
         {
             type: 'input',
@@ -57,7 +57,7 @@ const questions = [
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, generate.generateMarkdown(data), (err) => {
-        err ? console.error(err) : console.log('You did it')
+        err ? console.error(err) : console.log('You did it!')
     });
 
 }
