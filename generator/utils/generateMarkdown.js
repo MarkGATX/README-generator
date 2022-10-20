@@ -1,4 +1,4 @@
-let link ='';
+let licenseTOC = ``;
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
@@ -25,20 +25,27 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license !== "None") {
-    return `This project is covered under the `
+    licenseTOC = ` - [License](#license)`;
+    return `---
+    
+  ## License
+    
+  This project is covered under the `
   } else {
-    return `There is no license associated with this project.`;
+    licenseTOC = ``;
+    return ``;
   }
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   const { title, projectDesc, projectInstall, projectUsage, projectLicense, projectContrib, projectTests, projectUserName, projectEmail } = data;
-  let badge = renderLicenseBadge(projectLicense);
-  let link = renderLicenseLink(projectLicense);
-  let licenseText = renderLicenseSection(projectLicense);
+  // let badge = renderLicenseBadge(projectLicense);
+  // let link = renderLicenseLink(projectLicense);
+  // let licenseText = renderLicenseSection(projectLicense);
+  renderLicenseSection(projectLicense);
   return `# ${data.title}
-  ${badge}
+  ${renderLicenseBadge(projectLicense)}
 
   ## Description
 
@@ -49,7 +56,7 @@ function generateMarkdown(data) {
   ## Table of Contents
   - [Installation](#installation)
   - [How to use](#usage)
-  - [License](#license)
+  ${licenseTOC}
   - [Contributing](#contributing)
   - [Tests](#tests)
   - [Questions](#questions)
@@ -66,11 +73,9 @@ function generateMarkdown(data) {
 
   ${projectUsage}
 
-  --- 
   
-  ## License 
 
-  ${licenseText}${link}
+  ${renderLicenseSection(projectLicense)}${renderLicenseLink(projectLicense)}
 
   ---
   
