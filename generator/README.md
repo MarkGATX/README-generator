@@ -1,9 +1,9 @@
-# New project
-  ![GPLv2 license badge](https://img.shields.io/badge/License-GPLv2-blueviolet)
+# My very cool project
+  ![MIT license badge](https://img.shields.io/badge/License-MIT-blueviolet)
 
   ## Description
 
-  Now with more licenses
+  It does a lot of very cool stuff
 
   ---
 
@@ -19,13 +19,13 @@
 
   ## Installation
 
-  install it like usual
+  You install it by clicking on the Install button and hoping it works
 
   ---
   
   ## Usage
 
-  just use it 
+  You use it by using it and making things that make people happy.
 
   
 
@@ -33,23 +33,23 @@
     
   ## License
     
-  This project is covered under the [GPLv2 license](https://choosealicense.com/licenses/gpl-2.0)
+  This project is covered under the [MIT license](https://choosealicense.com/licenses/mit)
 
   ---
   
   ## Contributing
 
-  ask nicely
+  People can contribute by asking nicely and sending cake. Or cookies. Both work.
 
   ---
   
   ## Tests 
 
-  i guess
+  There will be testing. Some day. Not today.
 
   ---
   
   ## Questions 
 
-  If you have any questions please feel free to reach out to me on [GitHub](https://github.com/markgatx) or via [email](https://mailto:asdfasf).
+  If you have any questions please feel free to reach out to me on [GitHub](https://github.com/MarkGATX) or via [email](https://mailto:mark@lovablevarmint.com).
 
