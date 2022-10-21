@@ -13,38 +13,46 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license !== 'None') {
-
-    return `[${license} license](https://choosealicense.com/licenses/${license.toLowerCase()})`;
-    
+    switch (license) {
+      case 'MIT':
+        return `[${license} license](https://choosealicense.com/licenses/mit)`;
+        break;
+      case 'Apache':
+        return `[${license} license](https://choosealicense.com/licenses/apache)`
+        break;
+      case 'GPLv2':
+        return `[${license} license](https://choosealicense.com/licenses/gpl-2.0)`
+        break;
+      case 'GPLv3':
+        return `[${license} license](https://choosealicense.com/licenses/gpl-3.0)`
+        break;
+    }
   } else {
     return '';
   }
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {
-  if (license !== "None") {
-    licenseTOC = ` - [License](#license)`;
-    return `---
+  // TODO: Create a function that returns the license section of README
+  // If there is no license, return an empty string
+  function renderLicenseSection(license) {
+    if (license !== "None") {
+      licenseTOC = ` - [License](#license)`;
+      return `---
     
   ## License
     
   This project is covered under the `
-  } else {
-    licenseTOC = ``;
-    return ``;
+    } else {
+      licenseTOC = ``;
+      return ``;
+    }
   }
-}
 
-// TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  const { title, projectDesc, projectInstall, projectUsage, projectLicense, projectContrib, projectTests, projectUserName, projectEmail } = data;
-  // let badge = renderLicenseBadge(projectLicense);
-  // let link = renderLicenseLink(projectLicense);
-  // let licenseText = renderLicenseSection(projectLicense);
-  renderLicenseSection(projectLicense);
-  return `# ${data.title}
+  // TODO: Create a function to generate markdown for README
+  function generateMarkdown(data) {
+    const { title, projectDesc, projectInstall, projectUsage, projectLicense, projectContrib, projectTests, projectUserName, projectEmail } = data;
+    renderLicenseSection(projectLicense);
+    return `# ${data.title}
   ${renderLicenseBadge(projectLicense)}
 
   ## Description
@@ -96,6 +104,6 @@ function generateMarkdown(data) {
   If you have any questions please feel free to reach out to me on [GitHub](https://github.com/${projectUserName}) or via [email](https://mailto:${projectEmail}).
 
 `;
-}
+  }
 
-module.exports = {generateMarkdown}
+  module.exports = { generateMarkdown }

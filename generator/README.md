@@ -1,9 +1,9 @@
-# this works!
-  ![MIT license badge](https://img.shields.io/badge/License-MIT-blueviolet)
+# New project
+  ![GPLv2 license badge](https://img.shields.io/badge/License-GPLv2-blueviolet)
 
   ## Description
 
-  finally
+  Now with more licenses
 
   ---
 
@@ -19,13 +19,13 @@
 
   ## Installation
 
-  i think it's okay
+  install it like usual
 
   ---
   
   ## Usage
 
-  i might do more
+  just use it 
 
   
 
@@ -33,23 +33,23 @@
     
   ## License
     
-  This project is covered under the [MIT license](https://choosealicense.com/licenses/mit)
+  This project is covered under the [GPLv2 license](https://choosealicense.com/licenses/gpl-2.0)
 
   ---
   
   ## Contributing
 
-  i doubt it
+  ask nicely
 
   ---
   
   ## Tests 
 
-  but we'll see
+  i guess
 
   ---
   
   ## Questions 
 
-  If you have any questions please feel free to reach out to me on [GitHub](https://github.com/hyiuhjk) or via [email](https://mailto:alskdfjalsf).
+  If you have any questions please feel free to reach out to me on [GitHub](https://github.com/markgatx) or via [email](https://mailto:asdfasf).
 
